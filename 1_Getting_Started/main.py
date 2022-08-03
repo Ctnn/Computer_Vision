@@ -31,4 +31,8 @@ imshow("This is a Image",image)
 cv2.imwrite('output.jpg',image)
 
 
+import numpy as np
 
+print('Height of Image: {} pixels'.format(int(image.shape[0])))
+print('Width of Image: {} pixels'.format(int(image.shape[1])))
+print('Depth of Image: {} colors components'.format(int(image.shape[2])))
