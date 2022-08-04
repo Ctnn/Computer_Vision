@@ -12,4 +12,10 @@ def imshow(title="Image",image=None,size=10):
     plt.show()
 
 image= cv2.imread('../publicSource/images/castara.jpeg')
-imshow('Castara,Tobago',image)
+
+# We use cvtColor, to convert to grayscale
+# It takes 2 arguments, the first being the input image
+# The second being the color space conversion code
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+imshow("Converted to Grayscale", gray_image)
