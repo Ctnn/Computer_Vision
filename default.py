@@ -13,3 +13,5 @@ def imshow(text="Text",image=None,size=14):
 
 
 image=cv2.imread('../publicSource/images/Sunflowers.jpg')
+
+ #fixed
